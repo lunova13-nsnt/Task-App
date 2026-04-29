@@ -44,4 +44,9 @@ const startServer = async () => {
   });
 };
 
+app.use(cors({
+  origin: '*',
+  credentials: false,
+}));
+
 startServer();
